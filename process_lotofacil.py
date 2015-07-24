@@ -99,5 +99,5 @@ for i in master_list:
     n13 = i[14].strip('\n')
     n14 = i[15].strip('\n')
     n15 = i[16].strip('\n')
-    print num,date,n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15
-    #writer.writerow([num,date,n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15])
+    #print num,date,n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15
+    writer.writerow([num,date,n1,n2,n3,n4,n5,n6,n7,n8,n9,n10,n11,n12,n13,n14,n15])
