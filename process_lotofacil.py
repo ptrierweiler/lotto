@@ -4,6 +4,7 @@ import shutil
 from bs4 import BeautifulSoup
 import csv
 
+# url for lotto file
 url = "http://www1.caixa.gov.br/loterias/_arquivos/loterias/D_lotfac.zip"
 lotto_zip = 'D_lotfac.zip'
 html_file = '/home/ptrierweiler/Documents/lotto/data/D_LOTFAC.HTM'
