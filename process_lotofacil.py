@@ -10,32 +10,32 @@ lotto_zip = 'D_lotfac.zip'
 html_file = '/home/ptrierweiler/Documents/lotto/data/D_LOTFAC.HTM'
 csv_file = open('/home/ptrierweiler/Documents/lotto/lotofacil.csv','w')
 
-#Chaning Direction
+# Changing Directory
 os.chdir('/home/ptrierweiler/Documents/lotto')
 
 def dwn_unzip_func():
-    #checking for zip file and deleting if exists
+    # checking for zip file and deleting if exists
     if os.path.isfile(lotto_zip) == True:
         print "Deleting previous vertion of " + lotto_zip + "\n"
         os.remove(lotto_zip)
 
-    #checking for data directory and deleting if exists
+    # checking for data directory and deleting if exists
     if os.path.isdir("data") == True:
         shutil.rmtree("data")
 
-    #downloading file using wget
-    #should figure out how via python
+    # downloading file using wget
+    # should figure out how via python
     os.system("wget {url}".format(url = url))
 
-    #unziping data to data directory
-    #should figure out using python
+    # unziping data to data directory
+    # should figure out using python
     os.system("unzip {zip} -d data".format(zip = lotto_zip))
 
 
-#calling download and unzip_func
+# calling download and unzip_func
 dwn_unzip_func()
 
-#Parse the html file
+# Parse the html file
 html = open(html_file,'r')
 soup = BeautifulSoup(html, 'html.parser')
 
